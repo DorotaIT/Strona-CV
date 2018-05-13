@@ -1,0 +1,285 @@
+/*
+#c0392b
+
+/*......................................................*/
+/* BASIC SETUP */
+/*......................................................*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  color: rgb(59, 59, 59);
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom:1}
+.clearfix:after {
+  content: '.';
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+/*......................................................*/
+/* REAUSABLE COMPONENTS */
+/*......................................................*/
+
+.row {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 1%;
+}
+
+/*......................................................*/
+/* HEADINGS */
+/*......................................................*/
+
+h1,
+h2,
+h3 {
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 300%;
+  word-spacing: 4px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 170%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
+}
+
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #c0392b;
+  content: " ";
+  width: 100px;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+/*......................................................*/
+/* PARAGRAPHS */
+/*......................................................*/
+
+
+
+
+
+/*......................................................*/
+/* ICONS */
+/*......................................................*/
+
+.icon-big {
+  font-size: 350%;
+  display: block;
+  color: #c0392b;
+  margin-bottom: 10px;
+}
+
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #c0392b;
+  font-size: 120%;
+  margin-right: 10px;
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -4px;
+}
+
+
+/*......................................................*/
+/* HEADER */
+/*......................................................*/
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/main-pic.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+.main-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 60px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid #c0392b;
+}
+
+/*......................................................*/
+/* ABOUT ME */
+/*......................................................*/
+
+.about-me {
+  background-color: rgb(245, 244, 244);
+  padding-bottom: 30px;
+}
+
+.about-me img {
+  opacity: 0.7;
+  display: block;
+  height: 260px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 30px 0 35px 0px;
+  transition: transform 1s; opacity: 1;
+}
+
+.about-me img:hover {
+  transform: scale(1.1);
+}
+
+.short-info p {
+  line-height: 1.5;
+  text-align: center;
+}
+
+.box {
+  text-align: center;
+  margin-top: 30px;
+  padding-right: 10px;
+}
+
+.box p {
+  line-height: 1.4;
+  text-align: justify;
+}
+
+.box > div:nth-of-type(1) {
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+
+.box > div:nth-of-type(2) {
+  padding: 0 5px 0 5px;
+  box-sizing: border-box;
+}
+
+.box > div:nth-of-type(3) {
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+
+/*......................................................*/
+/* MY SKILLS */
+/*......................................................*/
+
+.my-skills {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../img/coding.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  height: 50vh;
+  padding-top: 20px;
+}
+
+.my-skills h2 {
+  color: #fff;
+  padding-bottom: 30px;
+  opacity: 1;
+}
+
+.my-skills p {
+  color: #fff;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.skills {
+  overflow: hidden;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 40px;
+  color: #fff;
+  opacity: 1;
+}
+
+/*......................................................*/
+/* CONTACT */
+/*......................................................*/
+
+.contact {
+  background-color: #fff;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.contact p {
+  margin-bottom: 20px;
+}
+
+.contact a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer-information {
+  overflow: hidden;
+}
+
+.footer-information .col:first-of-type {
+  text-align: right;
+}
+
+.footer-information .col:last-of-type {
+  text-align: left;
+}
